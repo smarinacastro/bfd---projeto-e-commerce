@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 2: E-Commerce (Petshop)</title>
+
+    <link rel="stylesheet" href="style_desafio2.css">
+
+</head>
+
+<body>
+    <h1>E-Commerce</h1>
+    <h2>Petshop</h2>
+    <div class="container">
+        <!--produtos-->
+        <div class="produtos">
+            <h2>Produtos</h2>
+            <div class="busca">
+                <input type= "text" id= "busca" placeholder="Buscar produto..." onkeyup="aplicarFiltros()">
+            </div>
+            <div class="filtros">
+                <!--checkboxes de categoria-->
+                <label>
+                    <input type="checkbox" id="filtro-caes" onchange="aplicarFiltros()"> Produtos para cães
+                </label>
+                 <label>
+                    <input type="checkbox" id="filtro-gatos" onchange="aplicarFiltros()"> Produtos para gatos
+                </label>
+
+                <!--ordenar produtos por-->
+                <select id="classificar" onchange="aplicarFiltros()">
+                    <option value="nenhum">Ordenar por...</option>
+                    <option value="preco-asc">Preço: do menor para o maior</option>
+                    <option value="preco-desc">Preço: do maior para o menor</option>
+                    <option value="alfabetica">Ordem alfabética</option>
+                </select>
+
+                <select id="estoque" onchange="aplicarFiltros()">
+                    <option value="todos">Tudo</option>
+                    <option value="disponivel">Produtos em estoque</option>
+                    <option value="indisponivel">Produtos indisponíveis</option>
+                </select>
+
+                <label>
+                    <input type="number" id="preco-min" placeholder="Preço mínimo" onchange="aplicarFiltros()">
+                    até
+                    <input type="number" id="preco-max" placeholder="Preço máximo" onchange="aplicarFiltros()">
+                </label>
+
+                <button onclick="limparFiltros()">Limpar filtros</button>
+                </div>
+            <div style="display: flex; gap: 20px;">
+                <div class="grid-produtos" id="listaProdutos"></div>
+            </div>
+    
+
+        </div>
+
+        <!--carrinho-->
+        <div class="carrinho">
+            <h2>Carrinho</h2>
+
+        <div id="listaCarrinho"></div>
+
+        <div class="total-box">
+            <h3>Total</h3>
+            <p id="valorTotal">R$ 0,00</p>
+        </div>
+
+        <div class="finalizar-compra">
+            <button id="btnFinalizar">Finalizar compra</button>
+        </div>
+
+</body>
+
+<script src="script_desafio2.js"></script>
+
+</html>

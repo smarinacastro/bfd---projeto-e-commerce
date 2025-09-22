@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.produtos, .carrinho {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.grid-produtos > div {
+  background: #f5f5f5;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.grid-produtos img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid-produtos span {
+  display: block;
+  font-weight: bold;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #333;
+}
+
+.carrinho ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.carrinho li {
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrinho p {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+}
+
+
+

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+body > h1,
+body > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.produtos, .carrinho {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.produtos h2,
+.carrinho h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.busca {
+    margin-bottom: 15px;
+}
+
+.busca input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 0.9em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.filtros {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filtros input,
+.filtros select,
+.filtros button {
+    background: #f9f9f9;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 0.9em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.filtros input[type="number"] {
+    width: 140px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+.filtros input::placeholder {
+    font-family: "Century Gothic", Arial, sans-serif;
+    
+}
+
+.filtros button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtros button:hover {
+    background: #333;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 por linha*/
+    gap: 20px;
+}
+
+.grid-produtos > div {
+    background: #f5f5f5;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.grid-produtos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-produtos span {
+    display: block;
+    font-weight: bold;
+}
+
+.grid-produtos button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.grid-produtos button:hover {
+    background: #333;
+}
+
+.carrinho .item-produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.carrinho .item-produto img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.carrinho .item-produto span {
+    font-weight: bold;
+    display: block;
+}
+
+.carrinho .item-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.carrinho .quantidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.carrinho button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carrinho button:hover {
+    background: #333;
+}
+
+.carrinho h3 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.total-box {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total-box h3 {
+    margin-bottom: 5px;
+}
+
+.total-box p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.finalizar-compra {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.finalizar-compra button {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.finalizar-compra button:hover {
+    background: #333;
+}
+
+
